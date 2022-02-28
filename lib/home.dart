@@ -1,7 +1,10 @@
+import 'package:fb_ui_clone/sections/statusSection.dart';
 import 'package:fb_ui_clone/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
+  Widget thickDivider = Divider(thickness: 1,
+  color: Colors.grey,);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,13 +23,22 @@ class Home extends StatelessWidget {
           actions: [
             CircularButton(
               buttonIcon: Icons.search,
-              buttonAction: (){
+              buttonAction: () {
                 print("navigate to search");
               },
             ),
-            CircularButton(buttonIcon: Icons.chat, buttonAction: (){
-              print("navigate to messenger");
-            },)
+            CircularButton(
+              buttonIcon: Icons.chat,
+              buttonAction: () {
+                print("navigate to messenger");
+              },
+            ),
+          ],
+        ),
+        body: ListView(
+          children: [
+            StatusSection(),
+            thickDivider,
           ],
         ),
       ),
