@@ -1,10 +1,13 @@
+import 'package:fb_ui_clone/sections/headerButtonSection.dart';
 import 'package:fb_ui_clone/sections/statusSection.dart';
 import 'package:fb_ui_clone/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
   Widget thickDivider = Divider(thickness: 1,
-  color: Colors.grey,);
+  color: Colors.grey[300],);
+  Widget thinDivider = Divider(thickness: 10,
+  color: Colors.grey[300],);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,6 +42,8 @@ class Home extends StatelessWidget {
           children: [
             StatusSection(),
             thickDivider,
+            HeaderButtonSection(),
+            thinDivider,
           ],
         ),
       ),
