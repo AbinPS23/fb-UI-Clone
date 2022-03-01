@@ -13,23 +13,23 @@ class HeaderButtonSection extends StatelessWidget {
               buttonIcon: Icons.video_call,
               buttonIconColor: Colors.red,
               buttonAction: () {
-                print("navigate to live.");
+                print("Go live.");
               }),
           VerticalDivider(thickness: 1, color: Colors.grey[300]),
           headerButton(
               buttonText: "Photo",
-              buttonIcon: Icons.photo,
+              buttonIcon: Icons.photo_library,
               buttonIconColor: Colors.green,
               buttonAction: () {
-                print("navigate to gallary.");
+                print("Take Photo");
               }),
               VerticalDivider(thickness: 1,color: Colors.grey[300],),
               headerButton(
               buttonText: "Room",
               buttonIcon: Icons.video_call,
-              buttonIconColor: Colors.indigo,
+              buttonIconColor: Colors.purple,
               buttonAction: () {
-                print("go to messenger.");
+                print("Create chat room");
               })
               
         ],
