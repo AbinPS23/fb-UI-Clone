@@ -5,9 +5,9 @@ import 'package:fb_ui_clone/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  Widget thickDivider = Divider(thickness: 1,
+  Widget thickDivider = Divider(thickness: 10,
   color: Colors.grey[300],);
-  Widget thinDivider = Divider(thickness: 10,
+  Widget thinDivider = Divider(thickness: 1,
   color: Colors.grey[300],);
   @override
   Widget build(BuildContext context) {
@@ -42,10 +42,11 @@ class Home extends StatelessWidget {
         body: ListView(
           children: [
             StatusSection(),
-            thickDivider,
-            HeaderButtonSection(),
             thinDivider,
-            RoomSection()
+            HeaderButtonSection(),
+            thickDivider,
+            RoomSection(),
+            thickDivider,
           ],
         ),
       ),

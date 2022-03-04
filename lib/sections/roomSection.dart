@@ -1,3 +1,5 @@
+import 'package:fb_ui_clone/assets.dart';
+import 'package:fb_ui_clone/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class RoomSection extends StatelessWidget {
@@ -9,13 +11,21 @@ class RoomSection extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: EdgeInsets.all(10),
         children: [
-          createRoomButton()
+          createRoomButton(),
+          Avatar(displayImage: farhan, displayStatus: true,),
+          Avatar(displayImage: kilivayil, displayStatus: true,),
+          Avatar(displayImage: sonu),
+          Avatar(displayImage: tinu),
+          Avatar(displayImage: gdone),
+          Avatar(displayImage: sarath),
+          Avatar(displayImage: aflu)
         ],
       ),
     );
   }
   Widget createRoomButton(){
     return Container(
+      padding: EdgeInsets.only(left: 5, right: 5),
             child: OutlineButton.icon(
               shape: StadiumBorder(),
                 onPressed: () {

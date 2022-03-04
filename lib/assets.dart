@@ -8,3 +8,4 @@ String gdone = "assets/avatars/gdone.jpg";
 String sarath = "assets/avatars/sarath.jpg";
 String shazzam = "assets/avatars/chai tech.jpg";
 String geo = "assets/avatars/geo-josph.jpg";
+String aflu = "assets/avatars/aflu.jpg";
