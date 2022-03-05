@@ -12,7 +12,7 @@ String aflu = "assets/avatars/aflu.jpg";
 
 //Stories
 String crossroads = "assets/stories/brototype malayalam.jpg";
-String sarathNeonStory = "assets/stories/srath neon tech.jpg";
+String sarathNeonStory = "assets/stories/sarath neon tech.jpg";
 String gdoneStory = "assets/stories/gdone malayalam.jpg";
 String afluStory = "assets/stories/aflu story.jpg";
 String farhanFazil = "assets/stories/maxresdefault.jpg";
