@@ -9,12 +9,16 @@ class StoryCard extends StatelessWidget {
   final String avatar;
   final String story;
   final bool createStoryStatus;
+  final bool displayBorder;
+  final BoxFit imagefit;
 
   StoryCard({
-    required this.labelText,
+    this.labelText = "",
     required this.avatar,
     required this.story,
-    this.createStoryStatus = false
+    this.createStoryStatus = false,
+    this.displayBorder = false,
+    this.imagefit = BoxFit.cover
   });
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,7 @@ class StoryCard extends StatelessWidget {
               iconColor: Colors.blue,
             ),
           ): 
-          Avatar(displayImage: avatar),
+          Avatar(displayImage: avatar, displayBorder: displayBorder,),
           Positioned(
             bottom: 10,
             left: 10,
